@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Students</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<div class="wrap">
+	<div class="header">
+    	<!-- logo -->
+    	<%= render :partial => "colleges/logo" %>
+     
+    </div>
+    
+        <!-- menu --> 
+    <%= render :partial => "colleges/mymenu" %>
+    <!-- header -->
+    <%= render :partial => "colleges/header" %>
+
+    
+    <div class="clear"></div>
+    </div>
+    
+    <div class="center_content">
+    	<div class="left_content">
+        	
+        <%= yield %>
+        </div>
+    
+    	<!-- testimonial -->
+    	<%#= render :partial => "colleges/testimonial" %>
+
+        <div class="clear"></div>   
+    </div>
+    
+     <!-- footer --> 
+     <%= render :partial => "colleges/footer" %>
+
+
+
+</div>
+</body>
+</html>
